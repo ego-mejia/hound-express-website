@@ -2,34 +2,70 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hound Express</title>
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Start of Header -->
     <header>
-      <p>Hound Express</p>
-      <img src="./assets/logo--light.png" alt="Hound Express logo" />
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Registro de Guías</a></li>
-        <li><a href="">Estado General</a></li>
-        <li><a href=""></a>Lista de Guías</li>
-        <li><a href=""></a>Buscar Guías</li>
-        <li><a href=""></a>Historial de Guías</li>
-      </ul>
+      <nav>
+        <img
+          src="./assets/logo--light.png"
+          alt="Hound Express logo"
+          style="width: 150px"
+        />
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Registro</a></li>
+          <li><a href="#">Estado General</a></li>
+          <li><a href="#">Lista</a></li>
+          <li><a href="#">Historial</a></li>
+        </ul>
+        <div class="search-container">
+          <button class="search-button" onclick="buscar()">
+            <img src="assets/search-icon.svg" alt="Buscar" />
+          </button>
+          <input
+            class="search-input"
+            id="search"
+            placeholder="Buscar ID..."
+            type="text"
+          />
+        </div>
+      </nav>
     </header>
+    <!-- end of Header -->
 
+    <!-- Start of Main -->
     <main>
-      <form class="register" action=""></form>
-      <section class="general"></section>
-      <section class="guides"></section>
+      <section class="main">
+        <h1>
+          Expertos en logística y comercio internacional en México y el mundo.
+        </h1>
+        <p>
+          Usamos tecnología de última generación para que tengas el control de
+          tu operación en tiempo real.
+        </p>
+        <img
+          class="banner--img"
+          src="./assets/contendor-carga-mapa-tierra.png"
+          alt="Imagen de contenedor de carga"
+        />
+      </section>
+      <section class="form"></section>
+      <section class="panels"></section>
+      <section class="list"></section>
     </main>
-
     <footer></footer>
-
-    <script src="" async defer></script>
+    <script></script>
   </body>
 </html>
