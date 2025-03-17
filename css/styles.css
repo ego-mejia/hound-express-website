@@ -210,10 +210,10 @@ nav ul li a {
         --laptop-lg: 1440px;
         --desktop-sm: 1920px; */
     .banner--img{
-        max-width: 450px;
+        max-width: 650px;
         /* width: 60vw; */
         right: 0px;
-        bottom: 0px;
+        bottom: -50px;
 
     }
     .main{
@@ -236,6 +236,11 @@ nav ul li a {
         width: 70%;
     }
 
+}
+@media (max-width: 768px) {
+    .banner--img{
+        bottom: 0px;
+    }
 }
 @media (max-width: 480px) {
         /* Breakpoints */
