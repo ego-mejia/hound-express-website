@@ -295,17 +295,20 @@ nav ul li a {
     height: 50px;
     background-color: white;
     /* font-size: 18px; */
-    font-size: clamp(14px, 3vw, 24px);
+    font-size: clamp(14px, 3vw, 18px);
     color: var(--medium-gray);
     padding-left: 16px;
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    outline: none;
+
 }
 .banner__form-container button{
     position: absolute;
     right: 0;
     cursor: pointer;
-    font-size: clamp(14px, 3vw, 24px);
+    font-size: clamp(14px, 3vw, 18px);
 }
 .banner__form-container h3{
     font-size: 24px;
