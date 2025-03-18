@@ -44,7 +44,8 @@ button{
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 15px 22px;
+    padding: 0px 22px;
+    height: 100%;
     border: none;
 }
 
@@ -293,7 +294,8 @@ nav ul li a {
     width: 100%;
     height: 50px;
     background-color: white;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: clamp(14px, 3vw, 24px);
     color: var(--medium-gray);
     padding-left: 16px;
     border-style: none;
@@ -303,6 +305,7 @@ nav ul li a {
     position: absolute;
     right: 0;
     cursor: pointer;
+    font-size: clamp(14px, 3vw, 24px);
 }
 .banner__form-container h3{
     font-size: 24px;
