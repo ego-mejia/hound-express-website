@@ -42,7 +42,7 @@
             <input
               class="search-input"
               id="search"
-              placeholder="Ingresar número de rastreo."
+              placeholder="Ingresar número de rastreo"
               type="text"
             />
           </div>
@@ -71,7 +71,7 @@
           <div class="banner__form-container">
             <h3>Rastree su Envío</h3>
             <div class="track-package">
-              <input type="text" placeholder="Ingresar número de rastreo." />
+              <input type="text" placeholder="Ingresar número de rastreo" />
               <button>Rastrear</button>
             </div>
           </div>
@@ -82,9 +82,65 @@
           />
         </div>
       </section>
-      <section class="form">
-        <h3>Registro de Guias</h3>
+      <!-- end of Main section -->
+
+      <!-- Start of Register section -->
+      <section class="register">
+        <div class="wrapper">
+          <h3>Registro de Guias</h3>
+
+          <form class="register__form" action="">
+            <div class="form-container">
+              <!-- Start of left side form -->
+              <div class="form--left">
+                <div class="form--element">
+                  <h4>Número de guía</h4>
+                  <input type="text" placeholder="1234567890" />
+                </div>
+                <div class="form--element">
+                  <h4>Destinatario</h4>
+                  <input type="text" placeholder="José Lopez" />
+                </div>
+
+                <div class="form--element">
+                  <h4>Origen</h4>
+                  <input type="text" placeholder="País" />
+                  <input type="text" placeholder="Dirección" />
+                  <input type="text" placeholder="Zip" />
+                </div>
+              </div>
+              <!-- end of left side form -->
+
+              <!-- Start of righ side form -->
+              <div class="form--right">
+                <div class="state-date-flex">
+                  <div class="form--element state-selector">
+                    <h4>Estado</h4>
+                    <select name="choice">
+                      <option value="first" selected>Pendiente</option>
+                      <option value="second">En tránsito</option>
+                      <option value="third">Entregado</option>
+                    </select>
+                  </div>
+                  <div class="form--element">
+                    <h4>Fecha</h4>
+                    <input class="date-selector" type="date" />
+                    <!-- <input type="text" placeholder="DD/MM/YYYY" id="datepicker" /> -->
+                  </div>
+                </div>
+                <div class="form--element">
+                  <h4>Destino</h4>
+                  <input type="text" placeholder="País" />
+                  <input type="text" placeholder="Dirección" />
+                  <input type="text" placeholder="Zip" />
+                </div>
+              </div>
+              <!-- end of right side form -->
+            </div>
+          </form>
+        </div>
       </section>
+      <!-- end of Register section -->
       <section class="panels">
         <h3>Panel de estado general</h3>
       </section>
