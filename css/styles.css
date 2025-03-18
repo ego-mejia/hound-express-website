@@ -9,6 +9,8 @@
     --light-blue: #7DB7D9; 
     --sky-blue: #99ECF5; 
     --placeholder-text: #8A8C8E; 
+    --border-gray: #8A8C8E; 
+    --medium-gray: #5B5B5B; 
 
     /* Breakpoints */
     --mobile-sm: 480px;
@@ -113,7 +115,7 @@ nav ul li a {
     padding: 8px;
     padding-left: 56px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-gray);
     width: 100%;
     height: 40px;
     outline: none;
@@ -292,7 +294,7 @@ nav ul li a {
     height: 50px;
     background-color: white;
     font-size: 18px;
-    color: #5B5B5B;
+    color: var(--medium-gray);
     padding-left: 16px;
     border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -347,7 +349,7 @@ nav ul li a {
     margin-top: 22px;
 }
 .register__form h4{
-    color: #5B5B5B;
+    color: var(--medium-gray);
     font-size: 14px;
 }
 .form-container{
@@ -357,6 +359,8 @@ nav ul li a {
 
     /* background-color: rgb(255, 238, 0); */
 }
+
+
 .form--left{
     display: flex;
     flex-direction: column;
@@ -374,6 +378,8 @@ nav ul li a {
 
     /* background-color: yellowgreen; */
 }
+
+
 .form--element{
     position: relative;
     display: flex;
@@ -393,7 +399,7 @@ nav ul li a {
     
     padding-left: 20px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-gray);
     outline: none;
     margin-bottom: 5px;
 
@@ -410,7 +416,7 @@ nav ul li a {
 
     border-style: none;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-gray);
     outline: none;
     font-size: 14px;
 
@@ -423,6 +429,11 @@ nav ul li a {
 
     color: black;
 }
+/* Para eliminar el icono predeterminado de chromo para calendario. */
+.date-selector::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
 input[type="date"]::-webkit-datetime-edit {
     color: var(--placeholder-text);
     }
@@ -438,14 +449,14 @@ input[type="date"]::-webkit-datetime-edit {
 .state-date-flex .form--element{
     max-width: 225px;
 }
-.state-date-flex .date-selector{
-    /* max-width: calc(412px - 220px); */
-}
+/* .state-date-flex .date-selector{
+    max-width: calc(412px - 220px);
+} */
 .state-date-flex{
     position: relative;
     gap: 10px;
 }
-/* ----------------------- */
+
 .form-icon{
     position: absolute;
     width: 14px;
@@ -458,4 +469,130 @@ input[type="date"]::-webkit-datetime-edit {
 .form--element select{
     color: var(--dark-blue);
 
+}
+@media (max-width: 768px) {
+    /* Breakpoints */
+    /* --mobile-sm: 480px;
+    --mobile-md: 767px;
+    --tablet-sm: 768px;
+    --tablet-lg: 1024px;
+    --laptop-sm: 1280px;
+    --laptop-lg: 1440px;
+    --desktop-sm: 1920px; */
+    .form-container{
+    flex-direction: column;
+    align-items: center;
+    max-width: 860px;
+    }
+    .form--right{
+        margin-left: 0px;
+        max-width: 860px;
+    }
+    .form--left{
+        max-width: 860px;
+    }
+    .form--element input {
+        max-width: 860px;
+    }
+    .state-date-flex{
+        flex-direction: column;
+    }
+    .state-date-flex .form--element{
+        max-width: 860px;
+    }
+}
+/* ---------------------------------------------- */
+.general{
+    padding: 0 80px;
+}
+@media (max-width: 1280px) {
+    .general{
+        padding: 0 20px;
+    }
+}
+.general .wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 auto;
+    
+    /* background-color: red; */
+}
+
+.general .cards-container{
+    display: flex;
+    justify-content: left;
+    
+    /* background-color: fuchsia; */
+}
+.card{
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    height: 156px;
+    position: relative;
+    background-color: white;
+    margin-right: 38px;
+    border-radius: 15px;
+    border: 1px solid var(--border-gray);
+
+}
+.card .value{
+    position: relative;
+    /* font-size: 40px; */
+    font-size: clamp(28px, 4vw, 40px);
+    color: #171138;
+    top: 35px;
+    left: 18px;
+    font-weight: bold;
+    
+}
+.card .title{
+    position: absolute;
+    /* font-size: 18px; */
+    font-size: clamp(12px, 2.5vw, 18px);
+
+    font-weight: bold;
+    color: var(--medium-gray);
+    left: 18px;
+    bottom: 28px;
+
+}
+@media (max-width: 768px) {
+    .card{
+        height: 120px;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 480px) {
+        /* Breakpoints */
+        /* --mobile-sm: 480px;
+        --mobile-md: 767px;
+        --tablet-sm: 768px;
+        --tablet-lg: 1024px;
+        --laptop-sm: 1280px;
+        --laptop-lg: 1440px;
+        --desktop-sm: 1920px; */
+        .card{
+            flex-direction: column;
+            min-height: 80px;
+            max-height: 100px;
+            justify-content: space-between;
+        }
+        .card .value{
+            position: relative;
+            top: 5px;
+            font-size: 22px;
+            left: 10px;
+            
+        }
+        .card .title{
+            position: relative;
+            font-size: clamp(12px, 2.5vw, 14px);
+
+            left: 10px;
+            bottom: 10px;
+        }
 }
