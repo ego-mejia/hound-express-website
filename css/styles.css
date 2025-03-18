@@ -367,10 +367,12 @@ nav ul li a {
 .form--right{
     display: flex;
     flex-direction: column;
+    max-width: 412px;
     width: 100%;
     justify-content: end;
-    /* background-color: yellowgreen; */
     margin-left: 10px;
+
+    /* background-color: yellowgreen; */
 }
 .form--element{
     position: relative;
@@ -437,7 +439,7 @@ input[type="date"]::-webkit-datetime-edit {
     max-width: 225px;
 }
 .state-date-flex .date-selector{
-    max-width: calc(412px - 220px);    /* width: 100%; */
+    /* max-width: calc(412px - 220px); */
 }
 .state-date-flex{
     position: relative;
