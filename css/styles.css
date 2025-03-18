@@ -662,3 +662,62 @@ tr:nth-child(even) {
         padding: 0 20px;
     }
 }
+
+/* -------------------- */
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 40px 80px;
+}
+footer p{
+    font-size: 14px;
+}
+footer .wrapper {
+    display: flex;
+    flex-direction: row; /* Alinea los elementos en una fila */
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center; /* Alinea verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+footer .text-container {
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Evita desbordamientos en pantallas pequeñas */
+}
+
+.footer-logo {
+    max-width: 151.62px;
+    width: 100%;
+}
+
+.footer-logo-link {
+    max-width: 151.62px;
+    width: 100%;
+}
+
+footer .social-icons--container {
+    display: flex;
+    gap: 15px; /* Espaciado entre los íconos */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .text-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer .social-icons--container {
+        justify-content: center;
+    }
+}
