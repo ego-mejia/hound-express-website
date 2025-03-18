@@ -114,15 +114,28 @@
               <!-- Start of righ side form -->
               <div class="form--right">
                 <div class="state-date-flex">
-                  <div class="form--element state-selector">
+                  <div class="form--element">
+                    <img
+                      class="form-icon"
+                      src="./assets/code-icon.svg"
+                      alt=""
+                    />
                     <h4>Estado</h4>
-                    <select name="choice">
-                      <option value="first" selected>Pendiente</option>
+                    <select class="state-selector" name="choice">
+                      <option class="default-option" value="default" selected>
+                        Seleccionar
+                      </option>
+                      <option value="first">Pendiente</option>
                       <option value="second">En tránsito</option>
                       <option value="third">Entregado</option>
                     </select>
                   </div>
                   <div class="form--element">
+                    <img
+                      class="form-icon"
+                      src="./assets/calendar-icon.svg"
+                      alt=""
+                    />
                     <h4>Fecha</h4>
                     <input class="date-selector" type="date" />
                     <!-- <input type="text" placeholder="DD/MM/YYYY" id="datepicker" /> -->

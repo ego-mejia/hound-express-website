@@ -373,9 +373,11 @@ nav ul li a {
     margin-left: 10px;
 }
 .form--element{
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+
     /* background-color: cyan; */
 }
 .form--element input {
@@ -438,6 +440,20 @@ input[type="date"]::-webkit-datetime-edit {
     max-width: calc(412px - 220px);    /* width: 100%; */
 }
 .state-date-flex{
+    position: relative;
     gap: 10px;
 }
 /* ----------------------- */
+.form-icon{
+    position: absolute;
+    width: 14px;
+    bottom: 15px;
+    right: 15px;
+}
+.state-selector .default-option{
+    color: var(--dark-blue);
+}
+.form--element select{
+    color: var(--dark-blue);
+
+}
