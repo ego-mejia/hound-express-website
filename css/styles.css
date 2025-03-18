@@ -602,3 +602,63 @@ input[type="date"]::-webkit-datetime-edit {
             bottom: 10px;
         }
 }
+/* ------------------------------------------ */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Evita que se rompa en pantallas muy pequeñas */
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto se corte en varias líneas */
+}
+th {
+    background: #007BFF;
+    color: white;
+}
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+.estado-en-transito { color: orange; font-weight: bold; }
+.estado-entregado { color: green; font-weight: bold; }
+.estado-pendiente { color: #1D648C; font-weight: bold; }
+.btn-editar {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.btn-editar:hover {
+    background: #218838;
+}
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px; /* Reduce el padding en pantallas pequeñas */
+    }
+    .btn-editar {
+        padding: 4px 8px; /* Botón más pequeño */
+        font-size: 12px;
+    }
+}
+
+.list{
+    padding: 0 80px;
+}
+@media (max-width: 1280px) {
+    .list{
+        padding: 0 20px;
+    }
+}
