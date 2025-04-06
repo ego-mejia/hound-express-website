@@ -20,11 +20,11 @@
   <body>
     <!-- Start of Header -->
     <header>
-      <nav>
+      <nav class="navbar">
         <a href="./index.html">
           <img
             src="./assets/logo--light.png"
-            class="navbar-logo"
+            class="navbar--logo"
             alt="Hound Express logo"
           />
         </a>
@@ -36,12 +36,12 @@
             <li><a href="#">Lista</a></li>
             <li><a href="#">Historial</a></li>
           </ul>
-          <div class="search-container">
-            <button class="search-button" onclick="buscar()">
+          <div class="search">
+            <button class="search__button" onclick="buscar()">
               <img src="assets/search-icon.svg" alt="Buscar" />
             </button>
             <input
-              class="search-input"
+              class="search__input"
               id="search"
               placeholder="Ingresar número de rastreo"
               type="text"
